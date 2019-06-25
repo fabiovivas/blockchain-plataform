@@ -24,4 +24,6 @@ A aplicação esta dividida em 3 menus
  O Nonce encontra-se na classe Block.
  O fee sempre será a diferença entre inputs e outputs
  
+ http://blockchain-plataform.azurewebsites.net/
+ 
 
