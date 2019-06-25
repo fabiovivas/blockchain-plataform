@@ -17,4 +17,10 @@ A aplicação esta dividida em 3 menus
  - Pode-se criar um nova wallet no botão "New Wallet"
  - Pode-se enviar valores entre carteiras no botão "Send"
  
+ O Core do Blockchain esta definido no projeto Blockchain.Core dentro da pasta Models
+ Dentro da classe Blockchain existe uma variavel de nome "Difficulty" que indica a quantidade de zeros que o hash precisa possuir.
+ O processo de SH256 é feito dentro do projeto Blockchain.Core dentro da pasta Utility na classe Criptografy
+ O Nonce encontra-se na classe Block.
+ O fee sempre será a diferença entre inputs e outputs
+ 
 
