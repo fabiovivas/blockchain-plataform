@@ -1,0 +1,14 @@
+﻿@model WalletModel
+
+@using (Html.BeginForm("CreateWallet", "Home", FormMethod.Post, new { id = "formWallet" }))
+{
+    <section class="container-fluid">
+        <div class="row">
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.Name)
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control", maxlength = 100 })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </section>
+}

@@ -1,0 +1,30 @@
+﻿@model WalletTransfer
+
+@using (Html.BeginForm("Send", "Home", FormMethod.Post, new { id = "formTransfer" }))
+{
+<section class="container-fluid">
+    <div class="row">
+        <div class="form-group col-lg-12">
+            @Html.LabelFor(model => model.AddressFrom)
+            @Html.DropDownListFor(model => model.AddressFrom, (SelectList)ViewBag.Address, "Select", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.AddressFrom, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            @Html.LabelFor(model => model.AddressTo)
+            @Html.DropDownListFor(model => model.AddressTo, (SelectList)ViewBag.Address, "Select", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.AddressFrom, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.Value)
+                @Html.TextBoxFor(model => model.Value, new { @class = "form-control", maxlength = 100 })
+                @Html.ValidationMessageFor(model => model.Value, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+</section>
+}

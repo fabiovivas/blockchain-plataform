@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Block Explorer";
+}
+
+@model List<Blockchain.Core.Models.Block>
+
+<nav class="navbar">
+
+    @using (Html.BeginForm("ReturnBlockchainJson", "Home", FormMethod.Post, new { @class = "form-inline", @target = "_blank" }))
+    {
+        <button id="btnReturnBlockchainJson" style="" class="btn btn-sm btn-primary">Return Blockchain Json</button>
+    }
+
+    @using (Html.BeginForm("ReturnUtxoJson", "Home", FormMethod.Post, new { @class = "form-inline", @target = "_blank" }))
+    {
+        <button id="btnReturnUtxoJson" style="" class="btn btn-sm btn-primary">Return Utxo Json</button>
+    }
+
+    @using (Html.BeginForm("ReturnTransactionPoolJson", "Home", FormMethod.Post, new { @class = "form-inline", @target = "_blank" }))
+    {
+        <button id="btnReturnTransactionPoolJson" style="" class="btn btn-sm btn-primary">Transaction Pool Json</button>
+    }
+
+    @using (Html.BeginForm("ClearBlockachain", "Home", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <button id="ClearBlockchain" style="" class="btn btn-sm btn-danger">Clear Blockchain</button>
+    }
+
+
+    @using (Html.BeginForm("PesquisarBlock", "Home", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+    }
+
+</nav>
+<br />
+<div class="text-center">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Transactions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Index
+                    </td>
+                    <td>
+                        @item.TransactionList.Count()
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

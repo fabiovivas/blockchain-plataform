@@ -1,0 +1,10 @@
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\bin\Debug\Blockchain.exe.config
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\bin\Debug\Blockchain.exe
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\bin\Debug\Blockchain.pdb
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\bin\Debug\Newtonsoft.Json.dll
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\bin\Debug\Newtonsoft.Json.xml
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\obj\Debug\Blockchain.Core.csprojAssemblyReference.cache
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\obj\Debug\Blockchain.Core.csproj.CoreCompileInputs.cache
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\obj\Debug\Blockchain.Core.csproj.CopyComplete
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\obj\Debug\Blockchain.exe
+C:\proj\FIAP\Blockchain-Plataform\Blockchain\Blockchain.Core\obj\Debug\Blockchain.pdb

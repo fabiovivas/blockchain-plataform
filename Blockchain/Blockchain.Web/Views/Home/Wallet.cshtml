@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "Wallet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Blockchain.Core.Models.Wallet
+
+<nav class="navbar">
+
+    <button id="btnNewWallet" style="" onclick="Blockchain.Wallet.CreateWallet()" class="btn btn-sm btn-primary">New Wallet</button>
+    <button class="btn btn-sm btn-primary" onclick="Blockchain.Wallet.Send()" type="button">Send</button>
+
+</nav>
+<br />
+<div class="text-center">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Address</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.WalletsAddress)
+            {
+                <tr>
+                    <td>
+                        @item
+                    </td>
+                    <td>
+                        @Model.Balance(item)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="modalWallet" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary" style="border-top-left-radius: 4px; border-top-right-radius: 4px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                @*conteúdo dinâmico*@
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                &nbsp;
+                <button id="btnSaveWallet" onclick="Blockchain.Wallet.SaveWallet()" type="button" class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalTransfer" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary" style="border-top-left-radius: 4px; border-top-right-radius: 4px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                @*conteúdo dinâmico*@
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                &nbsp;
+                <button id="btnSaveWallet" onclick="Blockchain.Wallet.SaveTransaction()" type="button" class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+

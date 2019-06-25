@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Miner";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Blockchain.Core.Models.Transaction>
+
+
+<nav class="navbar">
+
+    @using (Html.BeginForm("MinerTransactions", "Home", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <button id="btnReturnBlockchainJson" type="submit" style="" class="btn btn-sm btn-primary">Miner Pool</button>
+    }
+
+</nav>
+<br />
+
+
+<div class="text-center">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Inputs</th>
+                <th>Outputs</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @item.TxId
+                </td>
+                <td>
+                    @item.InputList.Count()
+                </td>
+                <td>
+                    @item.OutputList.Count()
+                </td>
+                <td>
+                    <button id="btnRemove" onclick="Blockchain.Wallet.RemoveTransaction('@item.TxId')" class="btn btn-sm btn-primary">Remove</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="mi-modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Confirm deletion?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="modal-btn-no">No</button>
+                <button type="button" class="btn btn-primary" id="modal-btn-si">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
