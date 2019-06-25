@@ -9,6 +9,7 @@ A aplicação esta dividida em 3 menus
    - "Return Blockchain Json" - Retorna a Chain
    - "Return Utxo Json"       - Retorna todos os outputs que não foram gastos
    - "Transaction Pool Json"  - Retrona todas as transações que estão para ser mineradas
+   - "Clear Blockchain"       - Utilizado para fins didáticos para reiniciar a blockchain.
 2) Miner: Lista todas as transações que precisam ser mineradas.
  - Possui listagem do hash da transação e a quantidade de inputs e outputs para essa transação
  - Possui o botão de mineração para inclui-las na Chain
