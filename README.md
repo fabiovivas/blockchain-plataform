@@ -22,7 +22,7 @@ A aplicação esta dividida em 3 menus
  Dentro da classe Blockchain existe uma variavel de nome "Difficulty" que indica a quantidade de zeros que o hash precisa possuir.
  O processo de SH256 é feito dentro do projeto Blockchain.Core dentro da pasta Utility na classe Criptografy
  O Nonce encontra-se na classe Block.
- O fee sempre será a diferença entre inputs e outputs
+ O fee esta fixado em 1 e todo valor do utxo da transação que não for gasto também será recompensa do minerador.
  
  http://blockchain-plataform.azurewebsites.net/
  
