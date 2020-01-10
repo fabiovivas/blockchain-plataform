@@ -24,11 +24,4 @@ A aplicação esta dividida em 3 menus
  O Nonce encontra-se na classe Block.
  O fee esta fixado em 1 e todo valor do utxo da transação que não for gasto também será recompensa do minerador.
  
- http://blockchain-plataform.azurewebsites.net/
- 
- - Integrantes
- - Fabio Pirola - RM335066
- - Rodrigo Mason - RM334405
  - Fabio Vivas - RM334142
- - Renato Puga - RM333257
-
