@@ -1,3 +1,11 @@
+# Configurações gerais
+- Certifique-se de ter o SDK .NET Framework 4.7.x instalado em sua máquina
+- Certifique-se de ter o .NET Core 2.2.x instalado em sua máquina
+
+# Como rodar o projeto
+1) Visual Studio
+- Aperte Ctrl + Shift + B para compilação
+
 # blockchain-plataform
 Blockchain-Plataform
 
