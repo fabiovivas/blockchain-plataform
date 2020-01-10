@@ -5,6 +5,13 @@
 # Como rodar o projeto
 1) Visual Studio
 - Aperte Ctrl + Shift + B para compilação
+- Selecione o ambiente ![Set de Ambiente](https://github.com/fabiovivas/blockchain-plataform/blob/master/bweb.png)
+- Após a compilação digite no browser: localhost:5000
+
+2) Visual Code
+- Vá até a pasta onde encontra-se o projeto web cd <caminho-relativo>\blockchain-plataform\Blockchain\Blockchain.Web
+- digite dotnet run
+- Após a compilação digite no browser: localhost:5000
 
 # blockchain-plataform
 Blockchain-Plataform
